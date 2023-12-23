@@ -805,3 +805,6 @@ body {
 #profilePicture img {
     border: 3px solid white;
 }
+hr {
+    width: 250px;
+}
