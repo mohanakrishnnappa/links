@@ -813,15 +813,3 @@ h1 {
     text-align: center;
     font-size: 25px;
 }
-.verified {
-	margin: auto;
-}
-.material-icons {
-	font-family: 'Material Icons';
-	font-weight: normal;
-	font-style: normal;
-	font-size: 135px;
-	transform: translateY(20px);
-	background: white;
-	border-radius: 90px;
-}
