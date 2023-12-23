@@ -813,3 +813,12 @@ h1 {
     text-align: center;
     font-size: 25px;
 }
+#userName img {
+  height: 15px;
+  padding-left: 3px;
+}
+#userName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
