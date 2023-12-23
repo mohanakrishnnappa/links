@@ -93,14 +93,14 @@ body {
     text-align: center;
 
     /*  animation   */
-    overflow: hidden;
+    /*  overflow: hidden;
     background: linear-gradient(90deg, var(--bgColor), var(--accentColor), var(--bgColor));
     background-repeat: no-repeat;
     background-size: 80%;
     animation: animate 3s linear var(--delay) infinite;
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);   */
 }
 
 
