@@ -808,3 +808,8 @@ body {
 hr {
     width: 250px;
 }
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
