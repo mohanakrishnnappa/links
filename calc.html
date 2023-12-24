@@ -1,39 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Basic Calculator</title>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
     .calculator {
-      width: 200px;
-      background-color: #f2f2f2;
-      padding: 10px;
+      width: 300px;
+      margin: 0 auto;
+      margin-top: 100px;
+      border: 1px solid #ccc;
       border-radius: 5px;
+      padding: 20px;
+      background-color: #f2f2f2;
       box-shadow: 0 0 5px #ccc;
     }
 
     .calculator input[type="text"] {
       width: 100%;
       margin-bottom: 10px;
-      padding: 5px;
-      font-size: 16px;
+      padding: 10px;
+      font-size: 18px;
     }
 
     .calculator button {
-      width: 50%;
-      padding: 5px;
+      width: 48%;
+      padding: 10px;
       font-size: 16px;
     }
   </style>
 </head>
 <body>
-  <div class="calculator">
-    <input type="text" id="num1" placeholder="Enter first number">
-    <input type="text" id="num2" placeholder="Enter second number">
-    <button onclick="add()">Add</button>
-    <button onclick="subtract()">Subtract</button>
-    <button onclick="multiply()">Multiply</button>
-    <button onclick="divide()">Divide</button>
-    <p id="result"></p>
+  <div class="container">
+    <div class="calculator">
+      <input type="text" id="num1" placeholder="Enter first number">
+      <input type="text" id="num2" placeholder="Enter second number">
+      
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-primary" onclick="add()">Add</button>
+        </div>
+        <div class="col">
+          <button class="btn btn-primary" onclick="subtract()">Subtract</button>
+        </div>
+        <div class="col">
+          <button class="btn btn-primary" onclick="multiply()">Multiply</button>
+        </div>
+        <div class="col">
+          <button class="btn btn-primary" onclick="divide()">Divide</button>
+        </div>
+      </div>
+      
+      <p id="result"></p>
+    </div>
   </div>
 
   <script>
@@ -61,7 +79,7 @@
     function divide() {
       var num1 = parseFloat(document.getElementById("num1").value);
       var num2 = parseFloat(document.getElementById("num2").value);
-      
+
       if (num2 !== 0) {
         var result = num1 / num2;
         document.getElementById("result").innerHTML = "Result: " + result;
